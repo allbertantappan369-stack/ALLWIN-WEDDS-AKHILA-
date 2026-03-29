@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allwin & Akhila Wedding Invitation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-image: url('image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            overflow-x: hidden;
+            position: relative;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Darker overlay for the dramatic wedding scene */
+            z-index: -1;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            position: relative;
+        }
+        .cross {
+            font-size: 100px;
+            color: #d4af37;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3em;
+            color: #fff;
+            margin: 0;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #f8f8f8;
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+        }
+        .bible-quote {
+            background: rgba(255,255,255,0.98);
+            padding: 30px;
+            margin: 40px 20px;
+            border-left: 5px solid #d4af37;
+            font-style: italic;
+            text-align: center;
+            font-size: 1.3em;
+            border-radius: 10px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        .couple {
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .groom, .bride {
+            display: inline-block;
+            width: 45%;
+            vertical-align: top;
+            margin: 0 2.5%;
+            background: rgba(255,255,255,0.98);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        .name {
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5em;
+            color: #8b0000;
+            margin: 0 0 10px;
+        }
+        .parents {
+            font-size: 1em;
+            color: #555;
+            margin: 0;
+            line-height: 1.4;
+        }
+        .event {
+            background: rgba(255,255,255,0.98);
+            margin: 40px 20px;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            text-align: center;
+        }
+        .date {
+            font-size: 2em;
+            color: #8b0000;
+            margin: 0;
+            font-family: 'Great Vibes', cursive;
+        }
+        .time-location {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+        .map-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #d4af37, #b8962e);
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+            transition: transform 0.3s;
+        }
+        .map-link:hover {
+            transform: translateY(-2px);
+        }
+        .countdown {
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.98), rgba(139, 0, 0, 0.98));
+            color: white;
+            padding: 40px;
+            margin: 40px 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        .countdown h2 {
+            margin: 0 0 20px;
+            font-size: 2em;
+        }
+        .countdown-timer {
+            font-size: 3em;
+            font-weight: bold;
+            font-family: monospace;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .message {
+            background: rgba(255,255,255,0.98);
+            margin: 40px 20px;
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            font-size: 1.1em;
+            line-height: 1.6;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            color: #333;
+        }
+        .rsvp {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255,255,255,0.98);
+            margin: 40px 20px;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        @media (max-width: 768px) {
+            .groom, .bride {
+                width: 90%;
+                margin: 10px 5%;
+                display: block;
+            }
+            .title {
+                font-size: 2.5em;
+            }
+            .countdown-timer {
+                font-size: 2em;
+            }
+            body::before {
+                background: rgba(0, 0, 0, 0.6);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="header">
+            <div class="cross">✝</div>
+            <h1 class="title">Allwin weds Akhila</h1>
+            <p class="subtitle">In Holy Matrimony</p>
+        </section>
+
+        <blockquote class="bible-quote">
+            "And now these three remain: faith, hope and love. But the greatest of these is love." <br>
+            <strong>1 Corinthians 13:13</strong> [web:4]
+        </blockquote>
+
+        <section class="couple">
+            <div class="groom">
+                <h2 class="name">Allwin</h2>
+                <p class="parents">Son of Antappan ND &amp; Jeena Mathew</p>
+            </div>
+            <div class="bride">
+                <h2 class="name">Akhila</h2>
+                <p class="parents">Daughter of Jose Joseph &amp; Elsamma Antony</p>
+            </div>
+        </section>
+
+        <section class="event">
+            <h2 style="color: #8b0000; font-family: 'Great Vibes', cursive; font-size: 2.5em;">Holy Wedding Ceremony</h2>
+            <p class="date">Saturday, 14th May 2026</p>
+            <p class="time-location">⏰ 11:00 AM</p>
+            <p class="time-location">📍 [Church Name/Location - Click for Directions]</p>
+            <a href="https://maps.app.goo.gl/qNg3tdnQJspSSDXi9" target="_blank" class="map-link">View on Google Maps →</a>
+        </section>
+
+        <section class="countdown">
+            <h2>Countdown to the Blessed Day</h2>
+            <div id="countdown-timer" class="countdown-timer">Calculating...</div>
+        </section>
+
+        <section class="message">
+            <p>Dear Family and Friends,</p>
+            <p>We are overjoyed to invite you to witness the sacred union of Allwin and Akhila in the presence of our Lord. Your prayers and presence would mean the world to us on this special day.</p>
+            <p>May God bless you abundantly!</p>
+        </section>
+
+        <section class="rsvp">
+            <h3 style="color: #8b0000;">Your Presence is Requested</h3>
+            <p>Please let us know if you can join us. RSVP by 1st May 2026.</p>
+            <!-- Add RSVP form or contact info here if needed -->
+        </section>
+    </div>
+
+    <script>
+        // Countdown Timer
+        function updateCountdown() {
+            const weddingDate = new Date('2026-05-14T11:00:00').getTime(); // IST assumed
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('countdown-timer').innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+            if (distance < 0) {
+                document.getElementById('countdown-timer').innerHTML = 'The Wedding Day has Arrived! ✨';
+            }
+        }
+
+        setInterval(updateCountdown, 1000);
+        updateCountdown();
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allwin & Akhila Wedding Invitation</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwTVNGVAAAAABiSAAICIABAA...FULL_BASE64_HERE..."); /* Paste full base64 below */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #333;
+            overflow-x: hidden;
+            position: relative;
+        }
+        /* Rest of styles unchanged */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .cross {
+            font-size: 100px;
+            color: #d4af37;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .title {
+            font-family: 'Great Vibes', cursive;
+            font-size: 3em;
+            color: #fff;
+            margin: 0;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.8);
+        }
+        .subtitle {
+            font-size: 1.2em
